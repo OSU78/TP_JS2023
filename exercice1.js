@@ -12,12 +12,12 @@ class Parser{
 
     parse (text){ 
         let convertInSrt = (text) =>{
-        this.str = text.split(' ').join('').split(this.motif).reduce((acc,cur)=>{Number(cur)? acc.push(cur):0;return acc},[])
-        console.log(this.str);
+            return this.str = text.split(' ').join('').split(this.motif).reduce((acc,cur)=>{Number(cur)? acc.push(cur):0;return acc},[])
+        }
+        convertInSrt(text)
     }
-    convertInSrt(text)
-}
-
+    
+    
 }
 
 const phrase = "8790: bonjour le monde:8987:7777:Hello World:    9007";
