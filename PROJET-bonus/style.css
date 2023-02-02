@@ -1,0 +1,213 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(5, 2, 30); 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(23, 23, 65); 
+}
+/* The track NOT covered by the handle.
+::-webkit-scrollbar-track-piece {
+    background: #000; 
+}
+/* Corner */
+::-webkit-scrollbar-corner {
+    background: #999; 
+}
+/* Resizer */
+::-webkit-resizer {
+    background: #111; 
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    margin-top: 0px;
+    width: -webkit-fill-available;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/************/
+
+header{
+   
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #fff;
+   font-size: 32px;
+   margin-bottom: 15px;
+   opacity: 0.72;
+
+}
+p,div,section,label,span,input,select{
+    margin-bottom: 18px;
+}
+
+body {
+    background-color: #120f27;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+   
+}
+*,
+*::before,
+*::after {
+    user-select: none !important;
+  box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:  --webkit-fill-available;
+   
+}
+main{
+    min-height: 79vh;
+}
+input:type[select] {
+    background-color: #120f27;
+    color: white;
+}
+header,main{
+    padding: 22px;
+}
+header{
+    width: -webkit-fill-available !important;
+    background: linear-gradient(90deg, rgba(16, 14, 60, 0.6rgba(9, 9, 121, 0.362)9,121,1) 35%, rgba(12, 37, 42, 0.659) 100%);
+    border-bottom: 1px solid #dddddd23;
+    padding-bottom: 2px;
+    box-shadow: 2px 12px 42px rgba(0, 94, 255, 0.112) ;
+    position: sticky;
+    top: 20px;
+    backdrop-filter: blur(5px);
+    z-index: 919191;
+}
+label{
+    opacity: 0.7;
+    font-size: 14px;
+}
+select {
+  
+    
+    outline: none;
+    height: 40px;
+
+    background: linear-gradient(90deg, rgb(16, 14, 60) 0%, rgba(9,9,121,1) 35%, rgb(12, 37, 42) 100%);
+    color :rgba(255, 255, 255, 0.819);
+    border: 1px solid #dddddd43;
+    padding: 0 1em 0 10px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+    font-family: inherit;
+    border-radius: 4px;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+  }
+
+  .form{
+    margin-top: 22px;
+  }
+  .form >p{
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+
+  .box{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #dddddd23;
+    width: fit-content;
+    
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  .box p{
+    color: rgb(197, 201, 233);
+  }
+  .box p:nth-child(1){
+    opacity: 0.54;
+    text-align: center;
+  }
+  .box p:nth-child(2){
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .box:hover{
+    cursor: pointer;
+    transform: scale(1.067);
+    transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  #todos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 22px;
+  }
+  #todos div{
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 22px rgb(16, 26, 73);
+  }
