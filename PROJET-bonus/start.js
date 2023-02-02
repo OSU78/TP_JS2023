@@ -44,7 +44,9 @@ async function displayUserList(){
 
 
 window.addEventListener('load', function () {
+    userSelect.click()
     displayUserList();
+
  });
 
        
