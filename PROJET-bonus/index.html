@@ -35,12 +35,28 @@
       </div>
       <div id="statistiques"></div>
       <div id="todos"></div>
+      <div id="posts">
+        <div id="avgNumberComments"></div>
+        <template id="templatePost">
+          <p class="titlePost"></p>
+          <p class="bodyPost"></p>
+          <p class="numberComments"></p>
+          <div class="comments">
+            <template id="templateComment">
+              <p class="nameComment"></p>
+              <p class="bodyComment"></p>
+              <p class="emailComment"></p>
+            </template>
+          </div>
+        </template>
+      </div>
     </main>
     <footer>
       <p>© 2023 - Tous droits réservés Hetic</p>
     </footer>
 
-    <script src="start.js"></script>
+    <script type="module" src="start.js"></script>
+    <script type="module" src="post.js"></script>
     <script>
       function getTodos(userId) {
         console.log(userId);
