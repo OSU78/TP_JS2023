@@ -199,7 +199,7 @@ select {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 15px;
+    gap: 25px;
     
     justify-content: space-between;
     width: 100%;
