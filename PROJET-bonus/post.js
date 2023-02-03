@@ -84,16 +84,18 @@ async function countWords(string, limit = 10) {
 
 function topWords(words) {
   console.log(words.size);
-  let string = "<p>Top 10 des mots les plus utilisés dans les posts</p>";
+  document.querySelector(".topWordsPosts-title").innerHTML= "<p>Top 10 des mots les plus utilisés dans les posts</p>";
+ 
   const iterator = words.entries();
   for (let i = 0; i < words.size; i++) {
     const word = iterator.next().value;
-    string += `<p>mot: ${word[0]} - occurences: ${word[1]}</p>`;
+    
+    document.querySelector(".topWordsPosts-item").innerHTML+= `<div class="result box" style="padding:12px; min-width: 200px ;min-width: 220px;"><p> occurences : ${word[1]}</p><p style="font-size:15px">mot: ${word[0]}</p></div>`;
   }
-  return string;
+  return true
 }
 
-userSelect.addEventListener("click", () => {
+userSelect.addEventListener("change", () => {
   if (userSelect.value !== currentUserId) {
     currentUserId = userSelect.value;
     if (postsContainer.children.length > 0) {
@@ -102,5 +104,7 @@ userSelect.addEventListener("click", () => {
     }
     const userId = userSelect.value;
     displayPostsUser(userId);
+    console.log("user changed");
+    console.log(currentUserId);
   }
 });

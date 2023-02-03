@@ -1,0 +1,75 @@
+html {
+    font-family: sans-serif;
+}
+.result {
+    color: palevioletred;
+    padding: 3px;
+}
+.warning {
+    color: purple;
+    padding: 3px;
+}
+.containerCharStats{
+    width: 100%;
+    height: 40vh;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: space-around;
+    align-content: center;
+}
+.containerMsg{
+    overflow-y: auto;
+    width: 100%;
+    height: 55vh;
+    margin-inline: auto;
+    border: 2px solid black;
+    margin-bottom: 30px;
+}
+.selection{
+    width: 50%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+.form{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.post{
+    font-size: 20px;
+}
+.message{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.submitPost{
+    width: 100%;
+    height: 80px;
+}
+#statsMoyenne{
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.statsPost{
+    font-size: 1.25rem;
+    font-style: italic;
+}
+.cardPost{
+    width: 95%;
+    height: auto;
+    margin-inline: auto;
+    border: 1px solid rgb(160,160,160);
+    border-radius: 4px;
+    font-size: 1.15rem;
+    padding : 10px;
+}

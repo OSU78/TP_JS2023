@@ -39,7 +39,12 @@
         <div id="avgNumberComments">
           Nombre moyen de commentaires par post : Calcul en cours
         </div>
-        <div id="topWordsPosts"></div>
+        <div id="topWordsPosts">
+        <p class="topWordsPosts-title" ></p>
+          <div class="topWordsPosts-item row">
+          
+          </div>
+        </div>
         <template id="templatePost">
           <p class="titlePost"></p>
           <p></p>
@@ -80,6 +85,7 @@
       }
       document.querySelector("#user").addEventListener("change", () => {
         getTodos(document.querySelector(".user").value);
+        
       });
 
       // const A = [8.3, 7.5];
