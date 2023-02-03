@@ -31,13 +31,15 @@
       <div class="form">
         <p>Selectionner de l'utilisateur :</p>
 
-        <select name="user" id="user" class="user"></select>
+        <select name="user" id="user" class="user">
+          <option value="">Selectionner un user</option>
+        </select>
       </div>
       <div id="statistiques"></div>
       <div id="todos"></div>
       <div id="posts">
         <div id="avgNumberComments">
-          Nombre moyen de commentaires par post : Calcul en cours
+         
         </div>
         <div id="topWordsPosts">
         <p class="topWordsPosts-title" ></p>
@@ -85,6 +87,8 @@
             const notCompleted = total - completed;
             result.innerHTML += `<div class="result box"><p> Tâche complétées </p> <p>  ${completed}</div>`;
             result.innerHTML += `<div class="result box"> <p>Tâche en cours </p> <p> ${notCompleted}</p></div>`;
+
+
           });
       }
       document.querySelector("#user").addEventListener("change", () => {
@@ -92,13 +96,7 @@
         
       });
 
-      // const A = [8.3, 7.5];
-      // const positions = [
-      //   [1, 1],
-      //   [2, 2],
-      //   [3, 4.5],
-      //   [0, 9],
-      // ];
+   
 
       function getDistance(userPosition, positions) {
         const distance = [];

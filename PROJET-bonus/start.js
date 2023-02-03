@@ -1,5 +1,6 @@
 const rootURI = "https://jsonplaceholder.typicode.com"
 export const userSelect = document.querySelector('#user');
+let localisations = [];
 const userMap = new Map();
 const userList = [];
 
@@ -22,6 +23,9 @@ export async function get(uri, ...params) {
                 .catch(error => console.log(error));
 }
 
+
+
+
 async function displayUserList(){
     const data = await get("/users");
     for (let i = 0; i < data.length; i++) {
@@ -32,11 +36,16 @@ async function displayUserList(){
         userMap.set("phone", data[i].phone);
         userMap.set("website", data[i].website);
         userList.push(userMap);
+        
+        for (let i = 0; i < data.length; i++) {
+          localisations.push([data[i].address.geo.lat, data[i].address.geo.lng]);
+        }
 
         const option = document.createElement('option');
         option.value = data[i].id;
         option.innerHTML = data[i].name;
         userSelect.appendChild(option);
+
     }
     userSelect.click();
 }

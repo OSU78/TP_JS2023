@@ -264,8 +264,21 @@ select {
   line-height: inherit;
 }
 
+.pd10{
+  padding: 10px;
+  
+}
+.width100{
+
+  width: --webkit-fill-available;
+  width: moz-available;
+
+}
 .form {
   margin-top: 22px;
+  position: sticky;
+  top: 59px;
+  z-index: 99899;
 }
 
 .form>p {
@@ -342,8 +355,8 @@ select {
   grid-gap: 10px;
 }
 
-.box p {
-  color: rgb(197, 201, 233);
+.box p ,post p:nth-child(2){
+  color: rgb(217, 219, 241);
 }
 
 .box p:nth-child(1) {
