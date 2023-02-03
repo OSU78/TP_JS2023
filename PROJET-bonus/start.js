@@ -1,11 +1,9 @@
-
-
 const rootURI = "https://jsonplaceholder.typicode.com"
-const userSelect = document.querySelector('#user');
+export const userSelect = document.querySelector('#user');
 const userMap = new Map();
 const userList = [];
 
-async function get(uri, ...params) {
+export async function get(uri, ...params) {
     let url = rootURI + uri;
     if(params) {
         for (let i = 0; i < params.length; i++) {
@@ -40,13 +38,10 @@ async function displayUserList(){
         option.innerHTML = data[i].name;
         userSelect.appendChild(option);
     }
+    userSelect.click();
 }
 
 
 window.addEventListener('load', function () {
-    userSelect.click()
     displayUserList();
-
  });
-
-       
