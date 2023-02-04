@@ -172,7 +172,7 @@ table {
 
 header {}
 
-h1 {
+h1 ,.customh3{
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: #fff;
@@ -180,6 +180,13 @@ h1 {
   margin-bottom: 15px;
   opacity: 0.72;
 
+}
+.customh3{
+  font-size: 24px;
+  margin-bottom: 5px;
+  opacity: 0.72;
+  width: --webkit-fill-available;
+  width: moz-available;
 }
 
 p,
@@ -265,11 +272,13 @@ select {
 }
 
 .pd10{
-  padding: 10px;
+  padding: 10px !important;
   
 }
+.mgTop40{
+  margin-top: 40px;
+}
 .width100{
-
   width: --webkit-fill-available;
   width: moz-available;
 

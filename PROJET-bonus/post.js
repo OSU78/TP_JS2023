@@ -129,7 +129,7 @@ async function countWords(string, limit = 10) {
 // Cette fonction prend en paramètre un Map et affiche les mots les plus utilisés dans la page html
 function topWords(words) {
   console.log(words.size); 
-  document.querySelector(".topWordsPosts-title").innerHTML = "<p>Top 10 des mots les plus utilisés dans les posts</p>"; // Modifie le titre du html
+  document.querySelector(".topWordsPosts-title").innerHTML = "Top 10 des mots les plus utilisés dans les posts"; // Modifie le titre du html
 
   const iterator = words.entries();
   // Boucle sur le nombre de mots contenus dans le Map
