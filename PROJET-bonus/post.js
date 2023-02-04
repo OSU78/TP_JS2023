@@ -16,10 +16,15 @@ async function displayPostsUser(userId) {
   // Récupération des posts à partir de l'Id du user
   const posts = await get("/posts", ["userId", userId]);
 
-  // Création d'un conteneur
+  // Vérification si le conteneur existe déjà
+  if(document.querySelector(".commentGroup")){
+    document.querySelector(".commentGroup").remove()
+  }
+   // Création d'un conteneur
   const container = document.createElement("div");
   postsContainer.append(container);
   container.classList.add("grid");
+  container.classList.add("commentGroup");
 
   // Initialisation des variables pour le calcul des moyennes
   let totalComments = 0;
