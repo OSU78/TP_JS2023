@@ -152,10 +152,7 @@ userSelect.addEventListener("change", () => {
 
   if (userSelect.value !== currentUserId) {
     currentUserId = userSelect.value; 
-    if (postsContainer.children.length > 0) {
-      const currentPosts = postsContainer.children[2]; 
-      postsContainer.removeChild(currentPosts);
-    }
+   
     const userId = userSelect.value; // Récupère l'id de l'utilisateur
     displayPostsUser(userId); 
     console.log("user changed"); 
