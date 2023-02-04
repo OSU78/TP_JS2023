@@ -109,7 +109,7 @@ function getDistance(userPosition, positions) {
 function displayDistances(distances) {
     console.log(userList[3].get("lat"));
     const container = document.querySelector("#statistiques");
-    container.innerHTML = " ";
+    container.innerHTML="";
     distances.forEach((distance) => {
         if (distance.distance > 0) {
             const div = document.createElement("div");
